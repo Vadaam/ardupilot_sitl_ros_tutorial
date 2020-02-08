@@ -30,9 +30,9 @@ echo "Getting latest version of Ardupilot..."
 cd $PROJECT_DIR
 #git clone git://github.com/diydrones/ardupilot.git
 # For the moment, use Alex Buyval's RangeFinderSITL2 branch
-git clone https://github.com/alexbuyval/ardupilot
+git clone https://github.com/Vadaam/ardupilot
 cd ardupilot
-git checkout RangeFinderSITL2
+git checkout bc_diss
 # Saves the path on a variable
 export APM_ROOT=$PROJECT_DIR/ardupilot
 
