@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 #----------------------------------------------------------
 # Purpose:
 #    Installs dependencies required by the Ardupilot's SITL.
@@ -18,20 +18,20 @@ CWD=$(pwd)
 OPT="/opt"
 
 BASE_PKGS="gawk make git arduino-core curl"
-SITL_PKGS="g++ python-pip python-matplotlib python-serial python-wxgtk2.8 python-scipy python-opencv python-numpy python-pyparsing ccache realpath"
+SITL_PKGS="g++ python-pip python-matplotlib python-serial python-wxgtk3.0 python-scipy python-opencv python-numpy python-pyparsing ccache realpath"
 PYTHON_PKGS="pymavlink MAVProxy droneapi catkin_pkg"
 PX4_PKGS="python-serial python-argparse openocd flex bison libncurses5-dev \
           autoconf texinfo build-essential libftdi-dev libtool zlib1g-dev \
           zip genromfs python-empy"
 BEBOP_PKGS="g++-arm-linux-gnueabihf"
-UBUNTU64_PKGS="libc6:i386 libgcc1:i386 gcc-4.6-base:i386 libstdc++5:i386 libstdc++6:i386"
+UBUNTU64_PKGS="libc6:i386 libgcc1:i386 gcc-6-base:i386 libstdc++5:i386 libstdc++6:i386"
 ASSUME_YES=false
 
 # GNU Tools for ARM Embedded Processors
 # (see https://launchpad.net/gcc-arm-embedded/)
-ARM_ROOT="gcc-arm-none-eabi-4_9-2015q3"
-ARM_TARBALL="$ARM_ROOT-20150921-linux.tar.bz2"
-ARM_TARBALL_URL="https://launchpad.net/gcc-arm-embedded/4.9/4.9-2015-q3-update/+download/$ARM_TARBALL"
+ARM_ROOT="gcc-arm-none-eabi-6-2017-q2"
+ARM_TARBALL="$ARM_ROOT-update-linux.tar.bz2"
+ARM_TARBALL_URL="http://firmware.ardupilot.org/Tools/PX4-tools/$ARM_TARBALL"
 
 # Ardupilot Tools
 ARDUPILOT_TOOLS="ardupilot/Tools/autotest"
