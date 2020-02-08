@@ -28,6 +28,7 @@
 
 # Stops at the first error it encounters
 set -e
+set -x
 
 export DEBIAN_FRONTEND=noninteractive
 
